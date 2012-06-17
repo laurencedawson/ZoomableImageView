@@ -8,5 +8,9 @@ Include ZoomableImageView.java in your project, add the view either programatica
 
 	zoomableImageView.setImageBitmap( bitmap );
 
+## Demo
+
+A working demo of the class in use can be seen in the app [Reddit Sync](https://play.google.com/store/apps/details?id=com.laurencedawson.reddit_sync). Clicking on a thumbnail will open up a fullscreen ZoomableImageView.
+
 ## License
 The code in this project is licensed under the Apache Software License 2.0, per the terms of the included LICENSE file.
