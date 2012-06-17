@@ -36,7 +36,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 
-public class ZoomableImageViewResample extends View {
+public class ZoomableImageView extends View {
 
 	// Statics
 	static final float sPanRate = 7;
@@ -102,7 +102,7 @@ public class ZoomableImageViewResample extends View {
 	private OnImageTouchedListener mImageTouchedListener;
 
 	// Programatic entry point
-	public ZoomableImageViewResample(Context context) {
+	public ZoomableImageView(Context context) {
 		super(context);
 		init( context );
 	}
@@ -113,7 +113,7 @@ public class ZoomableImageViewResample extends View {
 	}
 
 	// XML entry point
-	public ZoomableImageViewResample(Context context, AttributeSet attrs) {
+	public ZoomableImageView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		init( context );
 	}
