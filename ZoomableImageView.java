@@ -21,8 +21,6 @@
  * Copyright (C) 2009 The Android Open Source Project
  */
 
-package com.laurencedawson.reddit_sync.extended;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -38,9 +36,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 
-import com.laurencedawson.reddit_sync.RedditHelper;
-
-public class ZoomableImageView extends View {
+public class ZoomableImageViewResample extends View {
 
 	// Statics
 	static final float sPanRate = 7;
@@ -106,7 +102,7 @@ public class ZoomableImageView extends View {
 	private OnImageTouchedListener mImageTouchedListener;
 
 	// Programatic entry point
-	public ZoomableImageView(Context context) {
+	public ZoomableImageViewResample(Context context) {
 		super(context);
 		init( context );
 	}
@@ -117,7 +113,7 @@ public class ZoomableImageView extends View {
 	}
 
 	// XML entry point
-	public ZoomableImageView(Context context, AttributeSet attrs) {
+	public ZoomableImageViewResample(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		init( context );
 	}
@@ -532,8 +528,7 @@ public class ZoomableImageView extends View {
 
 					return true;
 				}catch(IllegalArgumentException e){
-					if(RedditHelper.DEBUG)
-						e.printStackTrace();
+					e.printStackTrace();
 				}
 			}
 			return false;

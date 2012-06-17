@@ -4,7 +4,7 @@ ZoomableImageView is a view designed to add pinch-to-zoom support for images in 
 
 ## Usage
 
-Include ZoomableImageView.java in your project, add the view either programatically or via XML to your activity and call:
+Include ZoomableImageView.java and OnImageTouchedListener in your project, add the view either programatically or via XML to your activity and call:
 
 	zoomableImageView.setImageBitmap( bitmap );
 
