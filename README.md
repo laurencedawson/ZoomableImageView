@@ -1,3 +1,9 @@
+# This project is now deprecated
+
+Please use the much better PhotoView library by Chris Banes
+
+https://github.com/chrisbanes/PhotoView
+
 # ZoomableImageView
 
 ZoomableImageView is a view designed to add pinch-to-zoom support for images in Android with minimal effort. 
